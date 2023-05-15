@@ -57,6 +57,21 @@ namespace ED
                 
                 
             }
+            //PRODUTO
+             if(escolha == "produto"){
+
+              produto produto1 = new();
+              
+              produto1.Produto = "Moletom";
+              produto1.tamanho = "GG";
+              produto1.marca = "Nike";
+              produto1.valor = (100);
+              produto1.atualizar(10);
+              produto1.PorcentagemCupom = "10%";
+              produto1.Quantidade = "8";
+
+              Console.WriteLine(produto1.imprimir());
+            }
         }    
     }
 }
