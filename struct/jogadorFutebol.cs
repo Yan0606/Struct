@@ -22,10 +22,10 @@ public struct jogadorFutebol{
     public string imprimir(){
         return "\nO jogador: " + this.nome + 
         "\nCamisa numero:" + this.numeroCamisa +
-        "\nJoga de:" + this.posicao +
-        "\nEle tem:" + this.registrarNumeroCartoesAmarelos + "\tAmarelos" + 
-        "\nEle tem :" + this.registrarNumeroCartoesVermelhos + "\tVermelhos" + 
-        "\nEle esta no time :" + this.verificarVinculoClube;
+        "\nPosição:" + this.posicao +
+        "\nCartões amarelos:" + this.registrarNumeroCartoesAmarelos + 
+        "\nCartões Vermelhos: " + this.registrarNumeroCartoesVermelhos + 
+        "\nEquipe: " + this.verificarVinculoClube;
     }
 
 }

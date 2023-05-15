@@ -40,16 +40,22 @@ namespace ED
             }
 
             //EQUIPE ESPORTES
-            else if(escolha == "equipe");{
+            else if(escolha == "equipe"){
                 //struct    
                 equipeEsporte equipe1 = new equipeEsporte();
 
-                equipe1.equipe = "Real Madrid";
-                equipe1.registrarCampeonatoVencido = "14";
-                equipe1.atualizarValorTotalPremiacoes = "10000";
-                equipe1.verificarAnoEstreia = "6 de março de 1902";
+                equipe1.equipe ="Real Madrid";
+                equipe1.quantJogador="23";
+                equipe1.jogosEquipe="56";
+                equipe1.golsEquipe="61";
+                equipe1.campeonatoVencido="Champions League";
+                equipe1.valorcampeonato(1000.0f);
+                equipe1.valorcampeonato(5000.0f);
+                equipe1.anoEstreia="1902";
 
                 System.Console.WriteLine(equipe1.imprimir());
+                
+                
             }
         }    
     }
