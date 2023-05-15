@@ -58,9 +58,9 @@ namespace ED
                 
             }
             //PRODUTO
-             if(escolha == "produto"){
+             else if(escolha == "produto"){
 
-              produto produto1 = new();
+              produto produto1 = new produto();
               
               produto1.Produto = "Moletom";
               produto1.tamanho = "GG";
@@ -71,6 +71,20 @@ namespace ED
               produto1.Quantidade = "8";
 
               Console.WriteLine(produto1.imprimir());
+            }
+
+            //PROFESSOR
+            else if(escolha == "professor"){
+
+                professor professor1 = new professor();
+
+                professor1.nome = "Bruno";
+                professor1.cpf = "111.111.111-11";
+                professor1.dataNasc = "01/01/1990";
+                professor1.salario = (3000);
+                professor1.endereco = "Rua: Messi is better then cr7";
+                professor1.reajustar(2000);
+                
             }
         }    
     }
