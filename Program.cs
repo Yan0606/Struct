@@ -1,6 +1,6 @@
 ﻿using Struct;
 
-namespace EXEMPLO
+namespace ED
 {
     class Program
     {
@@ -12,9 +12,10 @@ namespace EXEMPLO
 
             Console.WriteLine("Escolha o que quer fazer: ");
             escolha = Console.ReadLine();
-            
+
+            //JOGADOR DE FUTEBOL
             if(escolha == "jogador"){
-                jogadorFutebol jogador1 = new();
+                jogadorFutebol jogador1 = new jogadorFutebol();
 
                 jogador1.nome = "messi";
                 jogador1.numeroCamisa = "30";
@@ -23,10 +24,12 @@ namespace EXEMPLO
                 jogador1.registrarNumeroCartoesVermelhos ="0";
                 jogador1.verificarVinculoClube="Paris Saint German";
                 System.Console.WriteLine(jogador1.imprimir());
+
+            // CLIENTE
             }
-            else{
+            else if(escolha == "cliente"){
             //struct 
-            CLienteS cliente1 = new();
+            CLienteS cliente1 = new CLienteS();
 
             cliente1.nome = "Neymar";
             cliente1.cpf = "111.111.111-11";
@@ -36,11 +39,18 @@ namespace EXEMPLO
             System.Console.WriteLine(cliente1.imprimir());
             }
 
+            //EQUIPE ESPORTES
+            else if(escolha == "equipe");{
+                //struct    
+                equipeEsporte equipe1 = new equipeEsporte();
 
-        }
+                equipe1.equipe = "Real Madrid";
+                equipe1.registrarCampeonatoVencido = "14";
+                equipe1.atualizarValorTotalPremiacoes = "10000";
+                equipe1.verificarAnoEstreia = "6 de março de 1902";
 
-        
-           
-        
+                System.Console.WriteLine(equipe1.imprimir());
+            }
+        }    
     }
 }
