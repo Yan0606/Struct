@@ -74,7 +74,7 @@ namespace ED
             }
 
             //PROFESSOR
-            else if(escolha == "professor"){
+            else{
 
                 professor professor1 = new professor();
 
@@ -83,8 +83,11 @@ namespace ED
                 professor1.dataNasc = "01/01/1990";
                 professor1.salario = (3000);
                 professor1.endereco = "Rua: Messi is better then cr7";
-                professor1.reajustar(2000);
-                
+                professor1.reajustar(60);
+
+                   
+
+                System.Console.WriteLine(professor1.imprimir());                
             }
         }    
     }
