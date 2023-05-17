@@ -12,13 +12,13 @@ public struct professor{
 
     public string endereco;
 
-    public decimal falta = 1;
+    public float falta;
 
     
 
 
 
-    public professor (string nome, string cpf, string dataNasc, float salario, string endereco, float reajuste,decimal falta){
+    public professor (string nome, string cpf, string dataNasc, float salario, string endereco, float reajuste,float falta){
         this.nome = nome;
         this.cpf=cpf;
         this.dataNasc = dataNasc;
@@ -34,9 +34,11 @@ public struct professor{
             this.salario = this.salario + x;
         }
 
-      
-
-
+        //REAJUSTAR SALARIO POR FALTA
+        public void faltouPerdeu(float taxa){
+            float x = (this.salario * taxa)/100;
+            this.salario = this.salario - x;
+        }
 
     public string imprimir(){
         return "\nProfessor: " + this.nome + 

@@ -84,6 +84,7 @@ namespace ED
                 professor1.salario = (3000);
                 professor1.endereco = "Rua: Messi is better then cr7";
                 professor1.reajustar(60);
+                professor1.faltouPerdeu(2);
 
                    
 
